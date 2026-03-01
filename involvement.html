@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Thing that shows up on the top of your page-->
+    <title>What can we do?</title>
+    <!-- <link rel="icon" type="image" href="favicon.jpeg" /> -->
+    <!--End of Thing that shows up on the top of your page-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body id="involvement-body">
+    <nav>
+        <ul class="navbar">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item"><a href="hd.html">Educate</a></li>
+            <li class="nav-item active">
+                <a href="involvement.html">Involvement</a>
+            </li>
+            <li class="nav-item"><a href="meettheteam.html">Meet The Team</a></li>
+            <li class="nav-item"><a href="testR.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <br><br><br><br><br><br>
+    <div class="you-do">
+        <h1 class="involvementHeading">What Can We Do?</h1>
+
+        <button class="accordion">Speak Up</button>
+        <div class="panel">
+            <p class="words">Speak up ~ You can spread awareness of the critical conditions many people are experiencing
+                without the support they deserve. Across the country and the world, individuals from marginalized
+                communities face barriers to healthcare due to systemic inequality, racism, poverty, and a lack of
+                culturally competent care. By using your voice whether through social media, conversations, school
+                projects, or community events you help shine a light on the struggles that are too often ignored.
+                Advocacy begins with awareness, and awareness begins with people like you who care enough to speak up.
+                Don’t underestimate the power of your words. One voice can spark a movement.</p>
+        </div>
+
+        <button class="accordion">Volunteer</button>
+        <div class="panel">
+
+            <p class="words">Volunteer, taking action starts in your own community. You can volunteer with local
+                organizations dedicated to promoting health equity and supporting underserved populations. Whether
+                you're helping patients check in at a community health clinic, distributing resources through the
+                American Red Cross, or raising awareness at local events, your time and effort make a real difference.
+                Volunteering not only helps othersit also educates you about the realities of health disparities and how
+                change begins on the ground. To find opportunities near you, explore local health centers, non-profits,
+                or public health departments. Every helping hand brings us closer to a more just and equitable
+                healthcare system.
+
+            </p>
+        </div>
+
+
+        <button class="accordion">Donate</button>
+        <div class="panel">
+            <p>Donations, no matter how small, can make a significant impact. We've partnered with a few great
+                organizations that are working to reduce health disparities:
+            <ul>
+                <li><a
+                        href="https://www.gofundme.com/f/help-amy-defeat-rare-cancer-save-her-lung/cl/s?utm_campaign=fp_sharesheet&utm_content=amp13_t1&utm_medium=customer&utm_source=copy_link&lang=en_US">Amy's
+                        GoFundMe</a></li>
+                <li><a href="https://www.gofundme.com/f/join-gages-journey-battling-stage-4-glioblastoma">Gage’s
+                        GoFundMe</a></li>
+                <li><a href="https://www.gofundme.com/f/help-cindy-and-kids-as-michael-fights-on">Michael’s Family
+                        GoFundMe</a></li>
+            </ul>
+            </p>
+        </div>
+
+        <p class="final-message">Helping out by donating a little money can make a drastic difference in a child's life.
+            All our donations are given to local clinics, and we are excited to give everyone an opportunity to help
+            those who are suffering.</p>
+
+        <footer>
+            Helping Hearts © 2025. <br />
+            Website designed by Adeola, Ava, Andrea, Sanjana and Vibha
+        </footer>
+    </div>
+
+    <script>
+        const accordions = document.getElementsByClassName("accordion");
+        for (let i = 0; i < accordions.length; i++) {
+            accordions[i].addEventListener("click", function () {
+
+                this.classList.toggle("active");
+                const panel = this.nextElementSibling;
+
+                // Check if the panel has a maxHeight
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
