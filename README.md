@@ -1,2 +1,2 @@
-# helping-hearts
-KWK 2025 Web Development capstone project
+# Helping Hearts
+Kode With Klossy 2025 Web Development Capstone Project
