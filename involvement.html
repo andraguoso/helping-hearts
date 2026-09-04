@@ -94,28 +94,12 @@
             those who are suffering.</p>
 
         <footer>
-            Helping Hearts © 2025. <br />
+            Helping Hearts © 2025. <br>
             Website designed by Adeola, Ava, Andrea, Sanjana and Vibha
         </footer>
     </div>
 
-    <script>
-        const accordions = document.getElementsByClassName("accordion");
-        for (let i = 0; i < accordions.length; i++) {
-            accordions[i].addEventListener("click", function () {
-
-                this.classList.toggle("active");
-                const panel = this.nextElementSibling;
-
-                // Check if the panel has a maxHeight
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-            });
-        }
-    </script>
+    <script src="script.mjs"></script>
 </body>
 
 </html>
